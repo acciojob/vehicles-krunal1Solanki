@@ -10,6 +10,11 @@ public class Car extends Vehicle {
     private int seats;
     private String name;
 
+    @Override
+    public String getName() {
+        return name;
+    }
+
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         //Hint: Car extends Vehicle
         super(name);
